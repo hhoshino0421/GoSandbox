@@ -38,10 +38,9 @@ func Surface() {
 
 	fmt.Printf("%s","Surface start. \n")
 
-	//message := ""
-	fmt.Printf("<svg xmlns='http://www.w3.org/2000svg' " +
-	"style='stroke: grey; fill: white; stroke-width: 0.7' " +
-	"width='%d' height='%d'>", width, height)
+	message := "<svg xmlns='http://www.w3.org/2000svg' style='stroke: grey; fill: white; stroke-width: 0.7'"
+	fmt.Printf("%s", message)
+	fmt.Printf(" width='%d' height='%d'> \n", width, height)
 
 
 	for i :=0; i < cells; i++ {
@@ -57,7 +56,7 @@ func Surface() {
  	}
 
 
-	fmt.Printf("</svg>")
+	fmt.Printf("%s", "</svg> ")
 
 	fmt.Printf("%s","Surface end. \n")
 
